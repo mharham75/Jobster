@@ -1,0 +1,49 @@
+.profile {
+    h2 {
+        font-weight: 600;
+        font-size: 1.4rem;
+        text-align: start;
+    }
+
+    .profile-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        label,
+        input {
+            display: block;
+        }
+
+        input {
+            background-color: #f4f4f4;
+            border: none;
+            outline: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        label {
+            text-align: start;
+            margin-bottom: 8px;
+        }
+
+        .save-btn {
+            padding: 0.5rem;
+            background-color: burlywood;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            justify-self: center;
+            align-self: center;
+            margin-top: 30px;
+            width: 260px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+    }
+}
