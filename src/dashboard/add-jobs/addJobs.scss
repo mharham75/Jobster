@@ -1,0 +1,68 @@
+.add-jobs{
+
+    h2{
+        font-weight: 600;
+        text-align: start;
+    }
+
+    .add-job-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        label,input,select{
+            display: block;
+        }
+
+        label{
+            margin-bottom: 8px;
+            text-align: start;
+        }
+
+        input,select{
+            background-color: #f4f4f4;
+            border: none;
+            outline: none;
+            padding: 0.6rem;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        input{
+            width:90%;
+        }
+
+        select{
+            width: 100%;
+        }
+
+        .btn-grp{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+            margin-top: 25px;
+
+            button{
+                color: #fff;
+                padding: 0.5rem;
+                border: none;
+                cursor: pointer;
+                width: 50%;
+                border-radius: 4px;
+
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+
+            .clear-btn{
+                background-color: rgb(175, 172, 172); 
+            }
+
+            .submit-btn{
+                background-color: rgb(96, 172, 196);
+            }
+        }
+    }
+}
