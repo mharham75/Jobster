@@ -1,0 +1,1 @@
+export const baseUrl = 'https://jobify-prod.herokuapp.com/api/v1/toolkit'

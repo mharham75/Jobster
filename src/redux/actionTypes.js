@@ -1,0 +1,8 @@
+//user registration
+export const REGISTER_USER_REQUEST = 'REGISTER_USER_REQUEST'
+export const REGISTER_USER_SUCCESS = 'REGISTER_USER_SUCCESS'
+
+//user login
+export const USER_LOGIN_REQUEST = 'USER_LOGIN_REQUEST'
+export const USER_LOGIN_SUCCESS = 'USER_LOGIN_SUCCESS'
+
