@@ -1,11 +1,21 @@
-
 //components
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import JobsContainer from "../jobs-component/JobsContainer";
+import { allJobsThunk } from "../../redux/actions/allJobsAction";
 
 //styles
 import "./allJobs.scss";
 
 const AllJobs = () => {
+  const allJobs = useSelector((store) => store.allJobs);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(allJobsThunk());
+    console.log(allJobs, "all");
+  }, []);
+
   return (
     <>
       <div className="add-jobs">
