@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { userLoginThunk } from "../../redux/actions/userLoginAction";
+import { getUserFromLocalStorage } from "../../utils/localStorage";
 
 //styles
 import "./login.scss";
-import { getUserFromLocalStorage } from "../../utils/localStorage";
 
 const initialState = {
   email: "",
@@ -42,7 +42,6 @@ const Login = () => {
 
   useEffect( () => {
     const _user = getUserFromLocalStorage()
-    console.log(_user,'user')
     if(_user){
       navigate('/dashboard')
     }

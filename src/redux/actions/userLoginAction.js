@@ -25,7 +25,7 @@ export const userLoginThunk = (userDetails) => {
             const response = await axios.post(baseUrl+'/auth/login',userDetails);
             if(response){
                 dispatch(userLoginSucces(response.data))
-                addUserToLocalStorage(userDetails)
+                addUserToLocalStorage(response.data)
                 toast.success('Logging user in')
             }
         } catch (error) {

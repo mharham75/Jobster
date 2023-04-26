@@ -13,3 +13,11 @@ export const getUserFromLocalStorage = () => {
   const user = result ? JSON.parse(result) : null;
   return user;
 };
+
+export const getUserDetailsTokenFromLocalStorage = () => {
+  const _user = JSON.parse(localStorage.getItem('user'));
+  const { user } = _user;
+  if(user){
+    return user?.token;
+  }
+}

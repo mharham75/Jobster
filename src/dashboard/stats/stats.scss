@@ -1,0 +1,16 @@
+.card-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    .card{
+        padding: 12px;
+
+        .card-about{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
